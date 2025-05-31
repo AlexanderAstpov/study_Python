@@ -1,0 +1,8 @@
+print("Введите число")
+num1 = float(input())
+print("Введите процент %")
+num2 = float(input())
+print("Результат", end=' ')
+print(num1 / 100 * num2, end=' ')
+print("%")
+print("Результат", num1 / 100 * num2, "%")

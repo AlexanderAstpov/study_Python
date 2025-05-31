@@ -1,0 +1,1 @@
+print("\"Life is what heppens\n    when\n        you're busy making other plans\n                                    John lennon\"")
