@@ -14,7 +14,10 @@ class Airplane:
     def __iadd__(self, other):
         if isinstance(other, Airplane):
             self.num_of_pass += other.num_of_pass
-            return (self.num_of_pass)
+            if self.num_of_pass <= self.max_pas:
+                return (self.num_of_pass)
+            else:
+                print('Превышенно')
           
             
         
@@ -36,13 +39,11 @@ class Airplane:
         
 
     def __str__(self):
-        if self.max_pas < self.num_of_pass:
-            return f"{self.num_of_pass}"
-        else:
-            print("превышенно")   
+        return f"{self.num_of_pass}"
+        
         
 
-a1 = Airplane("A", 200, 450)
+a1 = Airplane("A", 100, 450)
 a2 = Airplane("B", 350, 350)
 
 
