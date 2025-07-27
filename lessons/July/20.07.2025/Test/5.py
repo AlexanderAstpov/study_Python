@@ -54,23 +54,19 @@ class Hero:
         print("Правила игры: побеждает тот, кто остался жив.")
 
     @classmethod
-    def create_warrior(cls, names, healths):
-        cls.names = names
-        cls.healths = healths
-        return(f"Герой {cls.names}, Здоровье: {cls.healths}")    
+    def create_warrior(cls):
+        return Hero("Воин", 110)    
 
     @classmethod
-    def create_mage(cls, names, healths):
-        cls.names = names
-        cls.healths = healths
-        return(f"Герой {cls.names}, Здоровье: {cls.healths}")    
+    def create_mage(cls):
+        return Hero("Маг", 80)
 
 
     
 
 Hero.show_rules()
-warrior = Hero.create_warrior("Воин", 110)
-mage = Hero.create_mage("Маг", 80)
+warrior = Hero.create_warrior()
+mage = Hero.create_mage()
 
 
 print(warrior)
