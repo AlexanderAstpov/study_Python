@@ -70,9 +70,22 @@ class Warrior(Hero):
         
 
     def take_damage(self, damage):
-        self.damage = damage - self.armor
+        self.damage = damage
+        if damage <= self.armor:
+            return self.damage == 0
+        else:
+            self.damage = damage - self.armor
         self.health = self.health - self.damage 
         print(f"Герой {self.name} получил {self.damage} урона, осталось: {self.health} здоровья")
+
+    # def take_damage(self, damage):
+    #     if damage <= self.armor:
+    #         super.take_damage()
+    #     else:
+    #         self.damage = damage - self.armor
+    #         self.health = self.health - self.damage 
+    #         print(f"Герой {self.name} получил {self.damage} урона, осталось: {self.health} здоровья")
+
 
 
 class Mage(Hero):
@@ -109,7 +122,7 @@ class Mage(Hero):
 warrior = Warrior("Боромир", 100, 10)
 mage = Mage("Гэндальф", 80, 50)
 print(warrior)
-warrior.take_damage(20)
+warrior.take_damage(5)
 print(warrior)
 
 print(mage)
