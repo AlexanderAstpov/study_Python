@@ -4,7 +4,7 @@ class Hero:
         self.health = health
 
     def __str__(self):
-        return f"{self.name} {self.health}"
+        return (f"Герой {self.name}, Здоровье: {self.health}")
 
     
 
