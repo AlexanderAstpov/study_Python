@@ -57,7 +57,7 @@ while True:
 
     if choice == "1":
         string = input("Введите строку: ")
-        stack.push()
+        stack.push(string)
     elif choice == "2":
         popped_string = stack.pop()
 
