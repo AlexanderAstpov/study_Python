@@ -1,0 +1,42 @@
+Задание № 1
+
+SELECT b.title, bi.price
+FROM books as b
+JOIN books_info as bi ON b.id = bi.book_id
+JOIN orders as o on b.id = o.book_id
+WHERE o.quantity IS NOT NULL
+
+Задание № 2
+
+SELECT b.title, bi.price
+FROM books as b
+JOIN books_info as bi ON b.id = bi.book_id
+JOIN orders as o on b.id = o.book_id
+WHERE o.quantity IS  NULL
+
+Задание № 3
+
+SELECT SUM (storage * price)
+FROM books as b
+JOIN books_info as bi ON b.id = bi.book_id
+JOIN orders as o on b.id = o.book_id
+WHERE b.author = 'А. С. Пушкин'
+
+Задание № 4
+
+SELECT b.title, bi.price
+FROM books as b
+JOIN books_info as bi ON b.id = bi.book_id
+JOIN orders as o on b.id = o.book_id
+WHERE o.quantity is NOT NULL
+order by price DESC
+LIMIT 1
+
+Задание № 5
+
+SELECT b.author, SUM(bi.storage)
+FROM books as b
+JOIN books_info as bi ON b.id = bi.book_id
+WHERE bi.storage > 0
+GROUP by b.author
+
