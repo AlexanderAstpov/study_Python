@@ -11,7 +11,7 @@ def add_new_worker(name, age, profession):
     connection.commit()
 
 def delete_worker(worker_id):
-    cursor.execute('DELETE FROM workers WHERE id = ?', (worker_id,))
+    cursor.execute('DELETE FROM workers WHERE id = ?', (worker_id,)) # в кортеже всегда должна стоять запятая
     connection.commit()
 
 def show_workers():
