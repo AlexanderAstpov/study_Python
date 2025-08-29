@@ -8,11 +8,11 @@ cursor.execute("SELECT * FROM books")
 rows = cursor.fetchall()
 data  = [dict(row) for row in rows]
 
-# for d in data: # выведет как список словарей [dict]
-#     print(d)
+for d in data: # выведет как список словарей [dict]
+    print(d)
 
-for row in rows:
-    print(row[1]) # print(row['title']) или любой индекс или название колонки
+# for row in rows:
+#     print(row[1]) # print(row['title']) или любой индекс или название колонки
 
 
 cursor.close()
