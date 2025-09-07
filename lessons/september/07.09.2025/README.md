@@ -21,7 +21,7 @@
 1. Первай элемент
 2. Второй элемент
 
-Пример щднострочного кода: `pip install -r requirements.txt`
+Пример однострочного кода: `pip install -r requirements.txt`
 
 ## Блок кода
 
