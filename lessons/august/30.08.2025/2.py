@@ -24,5 +24,5 @@ print(f'Код ответа: {response.status_code}')
 print(f'Тело страницы: {response.text}') # текст можно копировать
 
 
-with open("2.html", "w", encoding="utf-8") as fl:
-    fl.write(response.text)
+# with open("2.html", "w", encoding="utf-8") as fl:
+#     fl.write(response.text)
