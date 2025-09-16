@@ -1,0 +1,7 @@
+Welcome to Ubuntu 24.04 LTS (GNU/Linux 6.8.0-41-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+Last login: Wed Sep 10 17:47:08 2025 from 212.7.241.161
+root@server-3blgqm:~#
